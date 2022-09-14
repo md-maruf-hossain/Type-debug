@@ -1,16 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Type Monster</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Type Monster | Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    
+    <header class="pt-5 text-center">
+      <h1>Blog</h1>
+    </header>
+    <main>
+      <section class="w-75 mx-auto mt-4">
+        <!-- start -->
+        <div class="card border-dark mb-3">
+          <div class="card-header fs-4">1. Difference between <span class="fw-semibold">Session storage and Local storage.</span></div>
+          <div class="card-body">
+            <h5 class="card-title">Session storage</h5>
+            <p class="card-text">Session storage is a read-only  property who accesses a session Storage object for the current origin. Session storage is similar to localStorage; the difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends.</p>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Local storage</h5>
+            <p class="card-text">Local storage is a property that allows JavaScript sites and apps to save key-value pairs in a web browser with no expiration date. This means the data stored in the browser will persist even after the browser window is closed.</p>
+          </div>
+        </div>
+        <!-- end -->
+        <!-- start -->
+        <div class="card border-dark mb-3">
+          <div class="card-header fs-4">2. Difference between <span class="fw-semibold">Global Scope and Block Scope.</span></div>
+          <div class="card-body">
+            <h5 class="card-title">Global Scope</h5>
+            <p class="card-text"> Variables declared Globally (outside of any function) have Global Scope and Global variables can be accessed from anywhere in a program. Similar to function scope variables declared with var, let and const are quite similar when declared outside a block.</p>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Block Scope</h5>
+            <p class="card-text">Block scope restricts the variable that is declared inside a specific block, from access by the outside of the block. The let & const keyword facilitates the variables to be block scoped. In order to access the variables of that specific block, we need to create an object for it. Variables declared with the var keyword, do not have block scope.</p>
+          </div>
+        </div>
+        <!-- end -->
+        <!-- start -->
+        <div class="card border-dark mb-3">
+          <div class="card-header fs-4">2. Difference between <span class="fw-semibold">Session storage and Local storage.</span></div>
+          <div class="card-body">
+            <h5 class="card-title">Session storage</h5>
+            <p class="card-text">Session storage is a read-only  property who accesses a session Storage object for the current origin. Session storage is similar to localStorage; the difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends.</p>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Local storage</h5>
+            <p class="card-text">Local storage is a property that allows JavaScript sites and apps to save key-value pairs in a web browser with no expiration date. This means the data stored in the browser will persist even after the browser window is closed.</p>
+          </div>
+        </div>
+        <!-- end -->
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

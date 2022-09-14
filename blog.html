@@ -22,11 +22,17 @@
           <div class="card-header fs-4">1. Difference between <span class="fw-semibold">Session storage and Local storage.</span></div>
           <div class="card-body">
             <h5 class="card-title">Session storage</h5>
-            <p class="card-text">Session storage is a read-only  property who accesses a session Storage object for the current origin. Session storage is similar to localStorage; the difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends.</p>
+            <p class="card-text">
+              Session storage is a read-only property who accesses a session Storage object for the current origin. Session storage is similar to localStorage; the difference is that while data in
+              localStorage doesn't expire, data in sessionStorage is cleared when the page session ends.
+            </p>
           </div>
           <div class="card-body">
             <h5 class="card-title">Local storage</h5>
-            <p class="card-text">Local storage is a property that allows JavaScript sites and apps to save key-value pairs in a web browser with no expiration date. This means the data stored in the browser will persist even after the browser window is closed.</p>
+            <p class="card-text">
+              Local storage is a property that allows JavaScript sites and apps to save key-value pairs in a web browser with no expiration date. This means the data stored in the browser will persist
+              even after the browser window is closed.
+            </p>
           </div>
         </div>
         <!-- end -->
@@ -35,24 +41,52 @@
           <div class="card-header fs-4">2. Difference between <span class="fw-semibold">Global Scope and Block Scope.</span></div>
           <div class="card-body">
             <h5 class="card-title">Global Scope</h5>
-            <p class="card-text"> Variables declared Globally (outside of any function) have Global Scope and Global variables can be accessed from anywhere in a program. Similar to function scope variables declared with var, let and const are quite similar when declared outside a block.</p>
+            <p class="card-text">
+              Variables declared Globally (outside of any function) have Global Scope and Global variables can be accessed from anywhere in a program. Similar to function scope variables declared with
+              var, let and const are quite similar when declared outside a block.
+            </p>
           </div>
           <div class="card-body">
             <h5 class="card-title">Block Scope</h5>
-            <p class="card-text">Block scope restricts the variable that is declared inside a specific block, from access by the outside of the block. The let & const keyword facilitates the variables to be block scoped. In order to access the variables of that specific block, we need to create an object for it. Variables declared with the var keyword, do not have block scope.</p>
+            <p class="card-text">
+              Block scope restricts the variable that is declared inside a specific block, from access by the outside of the block. The let & const keyword facilitates the variables to be block
+              scoped. In order to access the variables of that specific block, we need to create an object for it. Variables declared with the var keyword, do not have block scope.
+            </p>
           </div>
         </div>
         <!-- end -->
         <!-- start -->
         <div class="card border-dark mb-3">
-          <div class="card-header fs-4">2. Difference between <span class="fw-semibold">Session storage and Local storage.</span></div>
+          <div class="card-header fs-4">3. How does an <span class="fw-semibold">Event Loop</span> works in JavaScript?</div>
           <div class="card-body">
-            <h5 class="card-title">Session storage</h5>
-            <p class="card-text">Session storage is a read-only  property who accesses a session Storage object for the current origin. Session storage is similar to localStorage; the difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends.</p>
+            <h5 class="card-title">Event Loop</h5>
+            <p class="card-text">
+              The event loop is the secret behind JavaScript's asynchronous programming. JS executes all operations on a single thread, but using a few smart data structures, it gives us the illusion
+              of multi-threading. Let's take a look at what happens on the back-end. <br />
+              The call stack is responsible for keeping track of all the operations in line to be executed. Whenever a function is finished, it is popped from the stack. <br />
+              The event queue is responsible for sending new functions to the stack for processing. It follows the queue data structure to maintain the correct sequence in which all operations should
+              be sent for execution.<br />
+              Whenever an async function is called, it is sent to a browser API. These are APIs built into the browser. Based on the command received from the call stack, the API starts its own
+              single-threaded operation.
+            </p>
           </div>
+        </div>
+        <!-- end -->
+        <!-- start -->
+        <div class="card border-dark mb-3">
+          <div class="card-header fs-4">4. How many ways we can get <span class="fw-semibold">Undefined</span> in JavaScript?</div>
           <div class="card-body">
-            <h5 class="card-title">Local storage</h5>
-            <p class="card-text">Local storage is a property that allows JavaScript sites and apps to save key-value pairs in a web browser with no expiration date. This means the data stored in the browser will persist even after the browser window is closed.</p>
+            <h5 class="card-title">There are 8 ways to get undefined in JavaScript</h5>
+            <p class="card-text">
+              I. Initialize variable before defining.<br />
+              II. If we do not return a declared function.<br />
+              III. If we do not pass a parameter into a function.<br />
+              IV. If there is nothing on the right side of return of a function.<br />
+              V. When there is no value inside a object.<br />
+              VI. When we console an empty array.<br />
+              VII. When we delete array[1], it will create a whole in that array.<br />
+              VIII. We cannot set a undefined variable.<br />
+            </p>
           </div>
         </div>
         <!-- end -->
